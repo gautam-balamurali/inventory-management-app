@@ -1,2 +1,2 @@
 export const totalSum = (list, objKey) =>
-  list.reduce((acc, curr) => acc + curr[objKey], 0);
+  list.reduce((acc, curr) => acc + Number(curr[objKey]), 0);

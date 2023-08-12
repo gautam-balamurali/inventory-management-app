@@ -1,0 +1,15 @@
+.product-details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem;
+  max-height: calc(100vh - 4rem - 4rem);
+  overflow-y: auto;
+}
+
+.product-details-section img {
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+}
