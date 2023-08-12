@@ -9,6 +9,8 @@ export const reducerFunction = (state, action) => {
       return { ...state, sortInput: payload };
     case "UPDATE_CHECKBOX":
       return { ...state, checkboxInput: payload };
+    case "UPDATE_INVENTORY":
+      return { ...state, inventoryData: [...state.inventoryData, payload] };
     default:
       return state;
   }

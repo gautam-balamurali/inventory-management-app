@@ -1,0 +1,39 @@
+.add-new-product-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  width: 100%;
+  max-height: calc(100vh - 4rem - 4rem);
+  overflow-y: auto;
+}
+
+.add-new-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-new-product-form label {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.add-new-product-form input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.add-prod-btn {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  width: fit-content;
+}
