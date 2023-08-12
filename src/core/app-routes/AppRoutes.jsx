@@ -7,6 +7,7 @@ import PageNotFound from "../../pages/PageNotFound";
 import DepartmentsPage from "../../pages/DepartmentsPage";
 import ProductsPage from "../../pages/ProductsPage";
 import AddNewProductPage from "../../pages/AddNewProductPage";
+import ProductDetailsPage from "../../pages/ProductDetailsPage";
 
 const AppRoutes = () => {
   return (
@@ -15,6 +16,7 @@ const AppRoutes = () => {
       <Route path="/departments" element={<DepartmentsPage />} />
       <Route path="/products" element={<ProductsPage />} />
       <Route path="/add-product" element={<AddNewProductPage />} />
+      <Route path="/product/:productId" element={<ProductDetailsPage />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

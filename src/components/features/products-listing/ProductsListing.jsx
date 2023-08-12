@@ -118,7 +118,7 @@ const ProductsListing = () => {
                     <img className="product-img" src={imageUrl} alt={name} />
                   </td>
                   <td>
-                    <NavLink>{name}</NavLink>
+                    <NavLink to={`/product/${id}`}>{name}</NavLink>
                   </td>
                   <td>{description}</td>
                   <td>${price}</td>
