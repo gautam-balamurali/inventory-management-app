@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# 🏬Inventory Management App📱
+
+- An inventory management app.
+
+## Tech Stack
+
+* React
+* Netlify
+
+## Preview
+
+* [View Live](https://inventory-management-gautam-bm.netlify.app/)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
