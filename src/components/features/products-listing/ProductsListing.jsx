@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import { departmentsInfoList } from "../../../config/app-config/AppConfig";
 import { useInventory } from "../../../core/contexts/InventoryContext";
@@ -12,6 +12,7 @@ const ProductsListing = () => {
   const { inventoryData, filterInput, sortInput, checkboxInput, dispatch } =
     useInventory();
   const [displayData, setDisplayData] = useState([...inventoryData]);
+  const navigate = useNavigate();
 
   const handleDepartmentFilter = (event) => {
     const { value } = event.target;
@@ -88,7 +89,13 @@ const ProductsListing = () => {
           <option value="price">Price</option>
           <option value="stock">Stock</option>
         </select>
-        <button className="add-new-btn">New</button>
+
+        <button
+          onClick={() => navigate("/add-product")}
+          className="add-new-btn"
+        >
+          New
+        </button>
       </div>
 
       <div className="products-listing-table">
