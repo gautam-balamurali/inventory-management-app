@@ -6,10 +6,12 @@ import "react-toastify/dist/ReactToastify.css";
 import AppRoutes from "../../../core/app-routes/AppRoutes";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
+import Sidebar from "../sidebar/Sidebar";
+import "./AppLayout.css";
 
 const AppLayout = () => {
   return (
-    <div>
+    <div className="app-layout">
       <ToastContainer
         position="top-right"
         autoClose={2000}
@@ -22,7 +24,8 @@ const AppLayout = () => {
         pauseOnHover
       />
       <Header />
-      <section className="section">
+      <section className="section grid-layout">
+        <Sidebar />
         <AppRoutes />
       </section>
       <Footer />

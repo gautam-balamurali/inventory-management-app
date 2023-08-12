@@ -1,8 +1,16 @@
-.navigation {
+.header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  position: relative;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   align-items: center;
-  padding-top: 1rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .link {
@@ -10,8 +18,7 @@
   color: var(--primary-color);
 }
 
-.navigation .active {
-  color: var(--dark-shade-color);
-  font-weight: 600;
-  font-size: 1.4rem;
+.header h1 {
+  text-transform: capitalize;
+  letter-spacing: 0.2em;
 }

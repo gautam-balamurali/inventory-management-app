@@ -1,0 +1,21 @@
+.card {
+  height: 8rem;
+  max-height: 10rem;
+  width: 15rem;
+  max-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-shade-color);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.card-title {
+  font-weight: bolder;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
