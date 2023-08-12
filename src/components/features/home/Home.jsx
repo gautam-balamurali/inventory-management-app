@@ -14,7 +14,7 @@ const Home = () => {
   dashboardInfoListCount.push(totalSum(inventoryData, "delivered"));
   dashboardInfoListCount.push(
     inventoryData.reduce(
-      (acc, curr) => (curr["stock"] <= 10 ? acc + 1 : acc),
+      (acc, curr) => (Number(curr["stock"]) <= 10 ? acc + 1 : acc),
       0
     )
   );
